@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    width: 70%;
+    box-sizing: border-box;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+
+    /* Faz qualquer mudança visual levar 0.3 segundos para acontecer (suave) */
+    border-bottom: 2px solid transparent;
+
+    /* Faz qualquer mudança visual levar 0.3 segundos para acontecer (suave) */
+    transition: border-color 0.3s ease, color 0.3s ease;
+    padding-bottom: 4px;
+    /* Dá um pequeno espacinho entre o texto e a linha */
+}
+
+header a:hover {
+    border-color: #354332;
+    /* A linha ganha cor de forma suave ao passar o mouse */
+    color: #354332;
+}
+
+
+#topo {
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 280px;
+}
+
+#topo img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 40px;
+}
+
+#texto {
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: clamp(20px, 3vw, 40px);
+
+    #texto {
+        flex: 0 1 400px;
+    }
+
+    min-width: 0;
+}
+
+#texto h1 {
+    margin: 0;
+}
+
+#texto p {
+    font-size: 0.5em;
+}
+
+#lopes {
+    color: #354332;
+}
+
+
+
+#preto {
+    color: black;
+    text-align: center;
+    font-size: 80px;
+}
+
+
+/* SEÇÃO SOBRE MIM */
+/* Estilo padrão (Desktop / telas grandes) */
+#cor2 {
+    background-color: #354332;
+}
+
+#sobremim {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* Corrigido de 10x para 40px */
+    margin: 0 auto;
+    padding: 170px 8%;
+    box-sizing: border-box;
+    color: white;
+}
+
+#not {
+    max-width: 50%;
+    height: auto;
+    border-radius: 40px;
+}
+
+#texto2 {
+    flex: 1;
+    font-size: 15px;
+}
+
+#topo img {
+    max-width: 300px;
+}
+
+/* SEÇÃO PROJETOS */
+
+#projeto {
+    background-color: #000;
+    width: 100%;
+    min-height: 850px;
+    padding: 90px 50px;
+    box-sizing: border-box;
+}
+
+#projeto a {
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+#projeto a:hover {
+    text-decoration: underline;
+    transform: translateY(-3px);
+    /* 3. Faz o texto subir 5 pixels ao passar o mouse */
+}
+
+#linkbarbearia {
+    color: rgb(33, 33, 139);
+}
+
+
+/* TÍTULO */
+#texto3 {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#texto3 h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: lowercase;
+    padding: 20px;
+}
+
+/* CONTAINER DOS CARDS */
+#projetos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+#academia,
+#barbearia {
+    background-color: #354332;
+    width: 330px;
+    min-height: 330px;
+    padding: 16px;
+    border-radius: 35px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGENS */
+#img_academia,
+#img_barbearia {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#projetos div:hover {
+    transform: scale(1.1);
+}
+
+/* TEXTOS */
+#academia p,
+#barbearia p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 12px;
+    line-height: 1.4;
+}
+
+
+/* SEÇÃO HABILIDADES */
+#linguagens {
+    background-color: #354332;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px;
+    min-height: 60vh;
+}
+
+#texto3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Configura as caixinhas circulares das logos */
+#imgs_linguagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto auto;
+    padding: 20px;
+    background-color: #354332;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* Configura as caixinhas circulares das logos */
+#html,
+#css,
+#js,
+#python,
+#sql,
+#node,
+#ts {
+    width: 130px;
+    height: 130px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Controla a imagem dentro da caixinha */
+#imgs_linguagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Efeito Hover */
+#imgs_linguagens div:hover {
+    transform: scale(1.1);
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #354332;
+    min-height: 140px;
+    margin-top: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* CONTATOS */
+
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+footer h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+/* Ícones */
+footer a {
+    display: inline-flex;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    #topo {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #texto {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    #topo img {
+        max-width: 300px;
+    }
+}
+
+/* Responsivo para Tablets e Notebooks menores (Abaixo de 1198px) */
+@media (max-width: 1198px) {
+    #sobremim {
+        padding: 100px 5%;
+        gap: 10px;
+    }
+}
+
+
+/* Responsivo para Celulares (Abaixo de 768px) */
+@media (max-width: 771px) {
+    #topo {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #preto{
+        font-size: 50px;
+    }
+
+    #texto {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    /* A Mágica para não entortar no celular: empilha a imagem e o texto */
+    #sobremim {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    #not {
+        max-width: 100%;
+        /* A imagem ocupa toda a largura disponível no mobile */
+        width: 100%;
+    }
+
+    #texto2 {
+        width: 100%;
+    }
+    /* HABILIDADES */
+
+    #imgs_linguagens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 11px;
+        margin: auto auto;
+        padding: 10px;
+        background-color: #354332;
+        width: 100%;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    /* Configura as caixinhas circulares das logos */
+    #html,
+    #css,
+    #js,
+    #python,
+    #sql,
+    #node,
+    #ts {
+        width: 108px;
+        height: 108px;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header a {
+        text-decoration: none;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 80%;
+        transition: 0.3s;
+        border-bottom: 2px solid transparent;
+
+        /* Faz qualquer mudança visual levar 0.3 segundos para acontecer (suave) */
+        border-bottom: 2px solid transparent;
+
+        /* Faz qualquer mudança visual levar 0.3 segundos para acontecer (suave) */
+        transition: border-color 0.3s ease, color 0.3s ease;
+        padding-bottom: 8px;
+        /* Dá um pequeno espacinho entre o texto e a linha */
+    }
+
+    header a:hover {
+        border-color: #354332;
+        /* A linha ganha cor de forma suave ao passar o mouse */
+        color: #354332;
+    }
+
+
+}
