@@ -10,6 +10,14 @@ Acredito que cada projeto é uma oportunidade de aprender, evoluir e desenvolver
 
 ---
 
+## 🌐 Meu portfólio
+
+Confira meus projetos e conheça um pouco mais sobre meu trabalho:
+
+👉 https://biancalopes304.github.io/meu-portfolio/
+
+---
+
 ## 🚀 Sobre mim
 
 - 🎓 Estudante de Engenharia de Software
